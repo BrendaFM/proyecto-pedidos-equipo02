@@ -192,6 +192,16 @@
       });
 
       mostrarMarcas();
+
+      const marcaExiste = marcas.some(function (marca) {
+        return marca.nombre.toLowerCase() === nombre.toLowerCase();
+      });
+
+      if (marcaExiste) {
+        alert("Esta marca ya está registrada.");
+        campoNombre.focus();
+        return;
+      }
     </script>
   </body>
 </html>
