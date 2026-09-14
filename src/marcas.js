@@ -1,3 +1,12 @@
+function esMarcaValida(marca) {
+    return marca !== null &&
+        typeof marca === "object" &&
+        typeof marca.nombre === "string" &&
+        marca.nombre.trim() !== "" &&
+        typeof marca.descripcion === "string" &&
+        (marca.estado === "Activa" || marca.estado === "Inactiva");
+}
+
 const formulario = document.getElementById("formMarca");
       const listaMarcas = document.getElementById("listaMarcas");
       let marcas = [];
