@@ -60,6 +60,23 @@
         background-color: #dddddd;
         color: #222222;
       }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+      }
+
+      th,
+      td {
+        border: 1px solid #cccccc;
+        padding: 10px;
+        text-align: left;
+        overflow-wrap: anywhere;
+      }
+
+      th {
+        background-color: #e5e7eb;
+      }
     </style>
   </head>
   <body>
@@ -99,5 +116,49 @@
         </select>
       </p>
     </form>
+    <h2>Marcas registradas</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">N.º</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Descripción</th>
+          <th scope="col">Estado</th>
+        </tr>
+      </thead>
+      <tbody id="listaMarcas"></tbody>
+    </table>
+    <script>
+      const formulario = document.getElementById("formMarca");
+      const listaMarcas = document.getElementById("listaMarcas");
+      let numeroMarca = 1;
+
+      formulario.addEventListener("submit", function (evento) {
+        evento.preventDefault();
+
+        const campoNombre = document.getElementById("nombre");
+        const nombre = campoNombre.value.trim();
+        const descripcion = document.getElementById("descripcion").value.trim();
+        const estado = document.getElementById("estado").value;
+
+        if (nombre === "") {
+          alert("Ingresa el nombre de la marca.");
+          campoNombre.focus();
+          return;
+        }
+
+        const fila = listaMarcas.insertRow();
+
+        fila.insertCell().textContent = numeroMarca;
+        fila.insertCell().textContent = nombre;
+        fila.insertCell().textContent = descripcion;
+        fila.insertCell().textContent = estado;
+
+        numeroMarca++;
+        formulario.reset();
+        campoNombre.focus();
+      });
+    </script>
   </body>
 </html>
