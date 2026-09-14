@@ -132,7 +132,34 @@
     <script>
       const formulario = document.getElementById("formMarca");
       const listaMarcas = document.getElementById("listaMarcas");
-      let numeroMarca = 1;
+      let marcas = [];
+
+      // Recuperar las marcas guardadas.
+      try {
+        const guardadas = JSON.parse(
+          localStorage.getItem("marcasCursoGithub") || "[]",
+        );
+
+        if (Array.isArray(guardadas)) {
+          marcas = guardadas;
+        }
+      } catch {
+        alert("No se pudieron recuperar las marcas guardadas.");
+      }
+
+      // Mostrar las marcas en la tabla.
+      function mostrarMarcas() {
+        listaMarcas.replaceChildren();
+
+        marcas.forEach(function (marca, indice) {
+          const fila = listaMarcas.insertRow();
+
+          fila.insertCell().textContent = indice + 1;
+          fila.insertCell().textContent = marca.nombre;
+          fila.insertCell().textContent = marca.descripcion;
+          fila.insertCell().textContent = marca.estado;
+        });
+      }
 
       formulario.addEventListener("submit", function (evento) {
         evento.preventDefault();
@@ -148,17 +175,23 @@
           return;
         }
 
-        const fila = listaMarcas.insertRow();
+        marcas.push({ nombre, descripcion, estado });
 
-        fila.insertCell().textContent = numeroMarca;
-        fila.insertCell().textContent = nombre;
-        fila.insertCell().textContent = descripcion;
-        fila.insertCell().textContent = estado;
+        // Guardar la lista en el navegador.
+        try {
+          localStorage.setItem("marcasCursoGithub", JSON.stringify(marcas));
+        } catch {
+          marcas.pop();
+          alert("No se pudo guardar la marca en este navegador.");
+          return;
+        }
 
-        numeroMarca++;
+        mostrarMarcas();
         formulario.reset();
         campoNombre.focus();
       });
+
+      mostrarMarcas();
     </script>
   </body>
 </html>
