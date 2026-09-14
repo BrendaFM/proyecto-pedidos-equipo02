@@ -1,14 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registro de marcas</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <h1>Registro de marcas</h1>
     <p>Formulario para registrar nuevas marcas.</p>
+    <form id="formMarca">
+      <p>
+        <label for="nombre">Nombre de la marca:</label><br />
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Ejemplo: Samsung"
+          required
+        />
+      </p>
 
-</body>
+      <p>
+        <label for="descripcion">Descripción:</label><br />
+        <textarea
+          id="descripcion"
+          name="descripcion"
+          rows="3"
+          placeholder="Escribe una breve descripción"
+        ></textarea>
+      </p>
+
+      <p>
+        <label for="estado">Estado:</label><br />
+        <select id="estado" name="estado">
+          <option value="Activa">Activa</option>
+          <option value="Inactiva">Inactiva</option>
+        </select>
+      </p>
+    </form>
+  </body>
 </html>
