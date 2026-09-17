@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de marcas</title>
+    <link rel="stylesheet" href="marcas.css" />
+  </head>
+  <body>
+    <h1>Registro de marcas</h1>
+    <p>Formulario para registrar nuevas marcas.</p>
+    <p>
+      <button type="submit">Guardar marca</button>
+      <button type="reset">Limpiar</button>
+    </p>
+    <form id="formMarca">
+      <p>
+        <label for="nombre">Nombre de la marca:</label><br />
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Ejemplo: Samsung"
+          required
+        />
+      </p>
+
+      <p>
+        <label for="descripcion">Descripción:</label><br />
+        <textarea
+          id="descripcion"
+          name="descripcion"
+          rows="3"
+          placeholder="Escribe una breve descripción"
+        ></textarea>
+      </p>
+
+      <p>
+        <label for="estado">Estado:</label><br />
+        <select id="estado" name="estado">
+          <option value="Activa">Activa</option>
+          <option value="Inactiva">Inactiva</option>
+        </select>
+      </p>
+    </form>
+    <h2>Marcas registradas</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">N.º</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Descripción</th>
+          <th scope="col">Estado</th>
+        </tr>
+      </thead>
+      <tbody id="listaMarcas"></tbody>
+    </table>
+    <script src="marcas.js"></script>
+  </body>
+</html>
