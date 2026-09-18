@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTP | Red de Campus a Nivel Nacional</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#">
+                <span style="color: var(--utp-red);">UTP</span> Sedes
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#destacado">Sede Destacada</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#regiones">Provincias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#lima">Lima</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="#contacto" class="btn btn-utp btn-sm px-4 py-2">Inscríbete</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-shape"></div>
+        <div class="container position-relative z-index-1">
+            <div class="row align-items-center min-vh-75">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <span class="hero-badge">Infraestructura Tecnológica 2026</span>
+                    <h1 class="display-3 hero-text-gradient mb-4">
+                        Tecnología y excelencia <br> estés donde estés.
+                    </h1>
+                    <p class="lead text-light opacity-75 mb-5 pe-lg-5">
+                        Conecta tu talento con laboratorios especializados, entornos de desarrollo y espacios diseñados para impulsar proyectos reales en Ingeniería, Sistemas y más.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#destacado" class="btn btn-utp btn-lg">Explorar Campus</a>
+                        <a href="#" class="btn btn-outline-light btn-lg rounded-pill px-4 fw-semibold">Ver Carreras</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Campus Section (Ica) -->
+    <section id="destacado" class="container">
+        <div class="featured-campus">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="feature-icon-box">
+                        <i class="bi bi-cpu"></i>
+                    </div>
+                    <h2 class="fw-bold mb-3">Campus Ica</h2>
+                    <p class="text-muted mb-4">
+                        Ubicado estratégicamente en la Av. Ayabaca S/N (Sector San José), nuestro campus en Ica destaca como un hub de innovación tecnológica. Espacios diseñados para el desarrollo de software, modelado de sistemas y ejecución de proyectos de ingeniería.
+                    </p>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> Laboratorios de Cómputo Avanzados</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-danger me-2"></i> Espacios de Co-working</li>
+                        <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Integración con la industria local</li>
+                    </ul>
+                </div>
+                <div class="col-lg-7">
+                    <div class="rounded-4 overflow-hidden shadow" style="height: 350px;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGr5qI2bKbwPZFb2ur2x4Aecaxn9Qe0FjMd3GSPRmp4VC__VB7TY92OxE&s=10" alt="Vista del Campus Ica de la UTP" class="w-100 h-100" style="object-fit: cover; object-position: center;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regiones Grid -->
+    <section id="regiones" class="campus-grid bg-light mt-5">
+        <div class="container">
+            <h2 class="region-title text-center">Nuestras Sedes en <span>Regiones</span></h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="modern-card">
+                        <h4 class="fw-bold mb-3">Arequipa</h4>
+                        <div class="d-flex align-items-start text-muted">
+                            <i class="bi bi-geo-alt fs-5 me-3 text-danger"></i>
+                            <p class="mb-0">Av. Tacna y Arica 160, Arequipa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="modern-card">
+                        <h4 class="fw-bold mb-3">Chiclayo</h4>
+                        <div class="d-flex align-items-start text-muted">
+                            <i class="bi bi-geo-alt fs-5 me-3 text-danger"></i>
+                            <p class="mb-0">Esquina Prol. Augusto B. Leguía con Av. Hernán Meiner.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="modern-card">
+                        <h4 class="fw-bold mb-3">Chimbote</h4>
+                        <div class="d-flex align-items-start text-muted">
+                            <i class="bi bi-geo-alt fs-5 me-3 text-danger"></i>
+                            <p class="mb-0">Km 424 Panamericana Norte, Nuevo Chimbote.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="modern-card">
+                        <h4 class="fw-bold mb-3">Huancayo</h4>
+                        <div class="d-flex align-items-start text-muted">
+                            <i class="bi bi-geo-alt fs-5 me-3 text-danger"></i>
+                            <p class="mb-0">Av. Circunvalación 449, El Tambo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="modern-card">
+                        <h4 class="fw-bold mb-3">Piura</h4>
+                        <div class="d-flex align-items-start text-muted">
+                            <i class="bi bi-geo-alt fs-5 me-3 text-danger"></i>
+                            <p class="mb-0">Av. Vice Cdra. 1, al costado de Real Plaza.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="modern-card">
+                        <h4 class="fw-bold mb-3">Trujillo</h4>
+                        <div class="d-flex align-items-start text-muted">
+                            <i class="bi bi-geo-alt fs-5 me-3 text-danger"></i>
+                            <p class="mb-0">Av. Nicolás de Piérola 1221, Trujillo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lima Grid -->
+    <section id="lima" class="campus-grid">
+        <div class="container">
+            <h2 class="region-title text-center">Nuestras Sedes en <span>Lima</span></h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="modern-card">
+                        <h4 class="fw-bold mb-3">Lima Centro</h4>
+                        <div class="d-flex align-items-start text-muted">
+                            <i class="bi bi-geo-alt fs-5 me-3 text-danger"></i>
+                            <p class="mb-0">Jr. Hernán Velarde 289, Lima.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="modern-card">
+                        <h4 class="fw-bold mb-3">Lima Norte</h4>
+                        <div class="d-flex align-items-start text-muted">
+                            <i class="bi bi-geo-alt fs-5 me-3 text-danger"></i>
+                            <p class="mb-0">Av. Alfredo Mendiola 6377, Los Olivos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="modern-card">
+                        <h4 class="fw-bold mb-3">Lima Sur</h4>
+                        <div class="d-flex align-items-start text-muted">
+                            <i class="bi bi-geo-alt fs-5 me-3 text-danger"></i>
+                            <p class="mb-0">Carretera Panamericana Sur Km 16, V.E.S.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="modern-card">
+                        <h4 class="fw-bold mb-3">Lima Este - SJL</h4>
+                        <div class="d-flex align-items-start text-muted">
+                            <i class="bi bi-geo-alt fs-5 me-3 text-danger"></i>
+                            <p class="mb-0">Av. El Sol cuadra 2, San Juan de Lurigancho.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="modern-card">
+                        <h4 class="fw-bold mb-3">Lima Este - Ate</h4>
+                        <div class="d-flex align-items-start text-muted">
+                            <i class="bi bi-geo-alt fs-5 me-3 text-danger"></i>
+                            <p class="mb-0">Carretera Central Km 11.6, Ate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA & Info -->
+    <footer class="modern-footer">
+        <div class="container text-center pt-5">
+            <h3 class="fw-bold mb-4">¿Listo para transformar tu futuro?</h3>
+            <a href="#" class="btn btn-utp btn-lg mb-5">Comienza Hoy</a>
+            
+            <div class="border-top border-secondary pt-4 mt-4 d-flex flex-column flex-md-row justify-content-between align-items-center opacity-75">
+                <p class="mb-2 mb-md-0">&copy; 2026 Universidad Tecnológica del Perú.</p>
+                <div class="d-flex gap-3 fs-5">
+                    <i class="bi bi-facebook" style="cursor:pointer;"></i>
+                    <i class="bi bi-instagram" style="cursor:pointer;"></i>
+                    <i class="bi bi-linkedin" style="cursor:pointer;"></i>
+                    <i class="bi bi-github" style="cursor:pointer;"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
