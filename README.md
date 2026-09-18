@@ -7,10 +7,10 @@
 - Juan Victor Cornejo Zapata - U23207778
 - Julio Gabriel Palacios Vives - U23322075
 
-### CURSO
+### CURSO Y SECCIÓN
 
-Herramientas de desarrollo
+Herramientas de desarrollo - 20141
 
-### SECCIÓN
+### FACULTAD
 
-20141
+Ingeniería
