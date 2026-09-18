@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo de Productos - Gestión de Pedidos</title>
+</head>
+<body>
+    <header>
+        <h1>Módulo de Gestión de Productos</h1>
+        <p><strong>Responsable:</strong> Juan Victor Cornejo Zapata (@Xoanvx)</p>
+    </header>
+
+    <main>
+        <section id="registro-producto">
+            <h2>Registrar Nuevo Producto</h2>
+            <form id="form-producto">
+                <div>
+                    <label for="codigo">Código:</label>
+                    <input type="text" id="codigo" placeholder="Ej. PROD-001" required>
+                </div>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Nombre del producto" required>
+                </div>
+                <div>
+                    <label for="precio">Precio (S/):</label>
+                    <input type="number" id="precio" step="0.10" min="0" placeholder="0.00" required>
+                </div>
+                <div>
+                    <label for="stock">Stock Inicial:</label>
+                    <input type="number" id="stock" min="1" placeholder="Cantidad" required>
+                </div>
+                <button type="submit">Guardar Producto</button>
+            </form>
+        </section>
+
+        <section id="listado-productos">
+            <h2>Listado General de Productos</h2>
+            <table border="1" cellpadding="6" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PROD-001</td>
+                        <td>Laptop Lenovo ThinkPad</td>
+                        <td>S/ 3,450.00</td>
+                        <td>12</td>
+                        <td>Disponible</td>
+                    </tr>
+                    <tr>
+                        <td>PROD-002</td>
+                        <td>Mouse Inalámbrico Logitech</td>
+                        <td>S/ 85.00</td>
+                        <td>40</td>
+                        <td>Disponible</td>
+                    </tr>
+                    <tr>
+                        <td>PROD-003</td>
+                        <td>Teclado Mecánico RGB</td>
+                        <td>S/ 240.00</td>
+                        <td>15</td>
+                        <td>Disponible</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
